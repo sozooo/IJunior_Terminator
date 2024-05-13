@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: f2c29499464bee647a1403483723f4b3
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Reddit Sans
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 742be67d14cfbec4795eec45c7f1e1a0, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
