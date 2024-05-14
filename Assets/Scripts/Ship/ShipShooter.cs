@@ -35,7 +35,7 @@ public class ShipShooter : Shooter
 
     public override void Shoot()
     {
-        _allyBullets.Add(Instantiate(_allyBulletPrefab, _shootPosition.position, _shootPosition.rotation));
+        _allyBullets.Add(Instantiate(_allyBulletPrefab, ShootPosition.position, ShootPosition.rotation));
 
         _allyBullets.Last().RangerShooted += AddPoints;
         _allyBullets.Last().Destroyed += RemoveBullet;

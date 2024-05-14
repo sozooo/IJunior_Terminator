@@ -39,14 +39,15 @@ public class Ship : MonoBehaviour
         GameOver?.Invoke();
     }
 
+    private void AddScore()
+    {
+        _scoreCounter.Add();
+    }
+
     public void Reset()
     {
         _scoreCounter.Reset();
         _mover.Reset();
     }
 
-    private void AddScore()
-    {
-        _scoreCounter.Add();
-    }
 }

@@ -180,6 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shootCooldown: 1
   _handler: {fileID: 6564605770500462101}
+  _pool: {fileID: 0}
 --- !u!114 &6564605770500462101
 MonoBehaviour:
   m_ObjectHideFlags: 0

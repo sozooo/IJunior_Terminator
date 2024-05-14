@@ -16,6 +16,6 @@ public class AllyBullet : Bullet
 
     protected void OnDestroy()
     {
-        Destroyed?.Invoke(gameObject.GetComponent<AllyBullet>());
+        Destroyed?.Invoke(this);
     }
 }

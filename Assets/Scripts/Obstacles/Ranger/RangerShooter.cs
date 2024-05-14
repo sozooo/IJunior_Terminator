@@ -6,6 +6,6 @@ public class RangerShooter : Shooter
 
     public override void Shoot()
     {
-        Instantiate(_prefab, _shootPosition.position, _shootPosition.rotation);
+        Instantiate(_prefab, ShootPosition.position, ShootPosition.rotation);
     }
 }

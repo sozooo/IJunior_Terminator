@@ -10,10 +10,10 @@ public class RangerGenerator : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(GenerateRangers());
+        StartCoroutine(Generate());
     }
 
-    private IEnumerator GenerateRangers()
+    private IEnumerator Generate()
     {
         var wait = new WaitForSeconds(_delay);
 
@@ -29,9 +29,9 @@ public class RangerGenerator : MonoBehaviour
         float spawnPositionY = Random.Range(_upperBound, _lowerBound);
         Vector3 spawnPoint = new Vector3(transform.position.x, spawnPositionY, transform.position.z);
 
-        var pipe = _pool.GetObject();
+        Ranger ranger = _pool.GetObject();
 
-        pipe.gameObject.SetActive(true);
-        pipe.transform.position = spawnPoint;
+        ranger.gameObject.SetActive(true);
+        ranger.transform.position = spawnPoint;
     }
 }

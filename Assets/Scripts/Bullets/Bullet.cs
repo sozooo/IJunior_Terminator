@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour, IInteractable
 {
-    [SerializeField] protected float _speed;
+    [SerializeField] private float _speed;
 
     protected void OnEnable()
     {

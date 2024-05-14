@@ -35,15 +35,15 @@ public class Game : MonoBehaviour
     private void OnRestartButtonClick()
     {
         _endScreen.Close();
-        StartGame();
+        Play();
     }
     private void OnPlayButtonClick()
     {
         _startScreen.Close();
-        StartGame();
+        Play();
     }
 
-    private void StartGame()
+    private void Play()
     {
         Time.timeScale = 1;
         _ship.Reset();

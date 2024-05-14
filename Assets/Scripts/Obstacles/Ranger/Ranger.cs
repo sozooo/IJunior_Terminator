@@ -39,6 +39,6 @@ public class Ranger : MonoBehaviour, IInteractable
 
     public void Dead()
     {
-        Destroy(gameObject);
+        GetComponentInParent<Container>().Pool.PutObject(this);
     }
 }

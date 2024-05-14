@@ -8,8 +8,6 @@ public class ObjectPool : MonoBehaviour
 
     private Queue<Ranger> _pool;
 
-    public IEnumerable<Ranger> PooledObjects => _pool;
-
     private void Awake()
     {
         _pool = new Queue<Ranger>();
@@ -30,6 +28,8 @@ public class ObjectPool : MonoBehaviour
 
     public void PutObject(Ranger ranger)
     {
+        Debug.Log("hello");
+        Debug.Log(ranger.ToString());
         _pool.Enqueue(ranger);
         ranger.gameObject.SetActive(false);
     }
