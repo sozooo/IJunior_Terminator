@@ -7,11 +7,17 @@ public class Ranger : MonoBehaviour, IInteractable
     [SerializeField] private CollisionHandler _handler;
 
     private RangerShooter _shooter;
+    private ObjectPool _pool;
     private float _currentTime;
 
     private void Awake()
     {
         _shooter = GetComponent<RangerShooter>();
+    }
+
+    private void Start()
+    {
+        _pool = GetComponentInParent<Container>().Pool;
     }
 
     private void OnEnable ()
@@ -39,6 +45,6 @@ public class Ranger : MonoBehaviour, IInteractable
 
     public void Dead()
     {
-        GetComponentInParent<Container>().Pool.PutObject(this);
+        _pool.PutObject(this);
     }
 }
